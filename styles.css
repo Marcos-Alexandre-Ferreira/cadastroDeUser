@@ -1,0 +1,81 @@
+/* css reset - boa prática */
+* {
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;/*Garante que o body ocupe no minimo 100% da altura do viewport*/
+
+}
+main {
+    margin: 0 auto; /* centraliza horizontalmente */
+    text-align: center;
+}
+form {
+    border-radius: 15px;
+    background-image: linear-gradient(to bottom, #3498db, #6a23b6);
+    padding: 1em;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#Form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#Form label {
+    margin-bottom: 3px;
+}
+#Form input, #Form textarea {
+    padding: 5px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+#Form button[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#Form button[type="submit"]:hover {
+    background-color: #d518a6;
+    transition: 1000ms;
+}
+/*scrollbar*/
+::-webkit-scrollbar {
+    width: 10px; /*largura da barra*/
+}
+::-webkit-scrollbar-track {
+    background-color: #220c3b;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #d518a6; /*scrollbar cor*/
+    border-radius: 10px;
+}
+/*footer*/
+footer {
+    color:#fff;
+    text-align: center;
+    background-color: #220c3b;
+    margin-top: auto; /*Empurra o footer para o final do viewport*/
+}
+
+footer a {
+    text-decoration: none;
+    color: #dbd5e0;
+}
+
+footer a:hover {
+    text-decoration:  underline;
+}

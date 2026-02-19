@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>Cadastro de Usuário</title>
+</head>
+<body>
+    <main>
+        <h2>Cadastro de Usuário</h2>
+        <form id="Form">
+
+            <label for="nome">Nome:</label>
+            <input type="name" id="nome" name="nome" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" pattern="[0-9]{4,15}" placeholder="(99)99999-9999" required>
+
+            <label for="cep">CEP:</label>
+            <input type="text" id="cep" name="cep" pattern="\d{5}-?\d{3}" placeholder="00000-000" required>
+        
+            <label for="logradouro">Logradouro:</label>
+            <input type="text" id="logradouro" name="logradouro" required>
+
+            <label for="bairro">Bairro:</label>
+            <input type="text" id="bairro" name="bairro" required>
+
+            <label for="cidade">Cidade:</label>
+            <input type="text" id="cidade" name="cidade" required>
+
+            <label for="estado">Estado:</label>
+            <input type="text" id="estado" name="estado" required>
+
+            <label for="numero">Número:</label>
+            <input type="number" id="numero" name="numero" required>
+
+            <button type="submit">Cadastrar</button>
+        </form>
+    </main>
+    <footer class="rodape">
+        <p>&copy; 2026 Marcos Alexandre - Todos os direitos reservados</p>
+        <p>Conecte-se comigo:</p>
+        <a href="https://www.linkedin.com/in/marcos-alexandre-972316186/"target="_blank">Linkdlin</a> |
+        <a href="https://github.com/Marcos-Alexandre-Ferreira"target="_blank">GitHub</a> |
+    </footer>
+</body>
+</html>
